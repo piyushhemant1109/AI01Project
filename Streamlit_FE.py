@@ -21,7 +21,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Title and Description
-st.title("💬 AI Medical Chatbot")
+st.title("💬 Implementation of Artificial Intelligence (AI) in Business-Decision Making: Pharma & Healthcare Applications")
 st.write("Ask medical-related questions and get AI-generated responses!")
 
 # User Input
