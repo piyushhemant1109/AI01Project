@@ -2,15 +2,14 @@ import streamlit as st
 import requests
 
 # Streamlit Page Configuration
-st.set_page_config(page_title="Implementation of Artificial Intelligence (AI) in Business-Decision Making: Pharma & Healthcare Applications", page_icon="💡", layout="centered")
+st.set_page_config(page_title="Implementation of Artificial Intelligence (AI) in Business-Decision Making: Pharma & Healthcare Applications", page_icon="💡")
 
 # Custom Styling
 st.markdown("""
     <style>
     .stTextInput>div>div>input {
-        background-color: #daff00;
-        font-size: 12px;
-        padding: 5px;
+        font-size: 16px;
+        padding: 10px;
     }
     .stButton>button {
         background-color: #008f9e;
@@ -23,7 +22,7 @@ st.markdown("""
 
 # Title and Description
 st.title("💬 Implementation of Artificial Intelligence (AI) in Business-Decision Making: Pharma & Healthcare Applications")
-st.write("Ask medical-related questions and get AI-generated responses!")
+st.write("Ask Business-related questions and get AI-generated responses!")
 
 # User Input
 user_input = st.text_input("Enter your question:", "What is Acromegaly?")
