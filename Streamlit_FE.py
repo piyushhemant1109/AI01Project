@@ -9,10 +9,10 @@ st.markdown("""
     <style>
     .stTextInput>div>div>input {
         font-size: 18px;
-        padding: 10px;
+        padding: 5px;
     }
     .stButton>button {
-        background-color: #4CAF50;
+        background-color: #008f9e;
         color: white;
         font-size: 16px;
         border-radius: 8px;
