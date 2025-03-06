@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 
 # Streamlit Page Configuration
-st.set_page_config(page_title="Implementation of Artificial Intelligence (AI) in Business-Decision Making: Pharma & Healthcare Applications", page_icon="💡")
+st.set_page_config(page_title="Implementation of Artificial Intelligence (AI) in Business-Decision Making: Pharma & Healthcare Applications", page_icon="💡", layout="centered")
 
 # Custom Styling
 st.markdown("""
