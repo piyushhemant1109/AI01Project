@@ -8,7 +8,8 @@ st.set_page_config(page_title="Implementation of Artificial Intelligence (AI) in
 st.markdown("""
     <style>
     .stTextInput>div>div>input {
-        font-size: 18px;
+        background-color: #daff00;
+        font-size: 12px;
         padding: 5px;
     }
     .stButton>button {
