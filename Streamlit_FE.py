@@ -2,55 +2,32 @@ import streamlit as st
 import requests
 
 # Streamlit Page Configuration
-st.set_page_config(page_title="Implementation of Artificial Intelligence (AI) in Business-Decision Making: Pharma & Healthcare Applications", page_icon="💡", layout="wide")
+st.set_page_config(page_title="Implementation of Artificial Intelligence (AI) in Business-Decision Making: Pharma & Healthcare Applications", page_icon="??", layout="centered")
 
 # Custom Styling
 st.markdown("""
     <style>
-    body {
-        background-color: #f5f7fa;
-        color: #2c3e50;
-    }
     .stTextInput>div>div>input {
-        font-size: 18px;
-        padding: 12px;
-        border-radius: 10px;
-        border: 2px solid #2c3e50;
-        background-color: #ecf0f1;
+        font-size: 16px;
+        padding: 10px;
     }
     .stButton>button {
-        background-color: #27ae60;
+        background-color: #008f9e;
         color: white;
-        font-size: 18px;
+        font-size: 16px;
         border-radius: 8px;
-        padding: 10px 20px;
-        font-weight: bold;
-    }
-    .stMarkdown h1 {
-        text-align: left;
-        font-size: 26px;
-        color: #2c3e50;
-        font-weight: bold;
-    }
-    .response-container {
-        background-color: #dff9fb;
-        padding: 15px;
-        border-radius: 10px;
-        margin-bottom: 20px;
-        border-left: 5px solid #27ae60;
     }
     </style>
 """, unsafe_allow_html=True)
 
 # Title and Description
-st.markdown("# 💬 Implementation of Artificial Intelligence (AI) in Business-Decision Making: Pharma & Healthcare Applications")
+st.title("?? Implementation of Artificial Intelligence (AI) in Business-Decision Making: Pharma & Healthcare Applications")
 st.write("Ask Business-related questions and get AI-generated responses!")
 
-# User Input at the Bottom
+# User Input
 user_input = st.text_input("Enter your question:", "What is Acromegaly?")
 
-# AI Response Section
-if user_input:
+if st.button("Get Response"):
     with st.spinner("Processing..."):
         try:
             # Google Colab API URL
@@ -59,8 +36,8 @@ if user_input:
             
             if response.status_code == 200:
                 st.success("Response received!")
-                st.markdown("### AI's Response:")
-                st.markdown(f'<div class="response-container">{response.json()["response"]}</div>', unsafe_allow_html=True)
+                st.write("**AI's Response:**")
+                st.info(response.json()["response"])  # Adjust based on API response format
             else:
                 st.error("Failed to get a response from the AI model.")
         except Exception as e:
@@ -69,6 +46,6 @@ if user_input:
 # Footer
 st.markdown("""
     ---
-    🔹 *Powered by Hugging Face & Streamlit*  
-    🔹 *Developed by Piyush Hemant Kadethankar*
+    ?? *Powered by Hugging Face & Streamlit*  
+    ?? *Developed by Piyush Hemant Kadethankar*
 """)
